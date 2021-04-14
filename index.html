@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+  <div class="left">
+
+    <div class="inner-container">
+
+      <img class="brand-logo" src="./images/Header-Logo-White.svg" alt="Brand-Logo">
+      <img class="bg-mobile" src="./images/taxi-mobile.jpg" alt="Brand-Logo">
+
+      <h1>
+        <span>Work</span><br>
+        In Sync
+      </h1>
+
+
+
+        <!-- ----------------------------------- this model ----------------------------------------->
+        <button data-modal-target="#modal" class="btn-add">Add User</button>
+              <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="title">Add Detail</div>
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+              <div class="modal-body" >
+                <form action="/" id="popup-form">
+                  <label for="fname">Firstname:</label>
+                  <input type="text" id="fname" name="fname" required><br>
+
+
+                  <label for="city">City:</label>
+
+                  <select id="city">
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                  </select><br>
+
+
+                  <label for="Degree">Degree:</label>
+                  <input type="text" id="degree" name="degree" required><br>
+
+                  <input type="button" data-close-button class="close-button" name="button" id="btn" value="Save" onclick="validateForm()">
+                 </form>
+
+              </div>
+              </div>
+              <div id="overlay"></div>
+
+              <!-- -------------------------------------------End of the Model ----------------------------------------------->
+
+
+
+              <!-- --------------------------------------    Table code    ------------------------- -->
+              <table border="4" id="show">
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Id</th>
+                    <th>City</th>
+                    <th>Degree</th>
+                    <th>Timestamp</th>
+                  </tr>
+                </thead>
+             </table>
+
+          </div>
+
+
+  </div>
+
+  <div class="right image-right">
+
+  </div>
+
+</div>
+
+   <script type="text/javascript" src="script.js">
+
+
+   </script>
+  </body>
+</html>
